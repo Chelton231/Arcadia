@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arcadia", "Arcadia.csproj", "{A28A5696-D469-49F4-A4DC-EDB0C172F1E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A28A5696-D469-49F4-A4DC-EDB0C172F1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28A5696-D469-49F4-A4DC-EDB0C172F1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28A5696-D469-49F4-A4DC-EDB0C172F1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28A5696-D469-49F4-A4DC-EDB0C172F1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F21963FD-3EBF-480B-B55B-FCF8CD7CB341}
+	EndGlobalSection
+EndGlobal

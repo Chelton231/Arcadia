@@ -1,0 +1,11 @@
+{
+    
+	"maxplayers" : 20,
+	"name" : "Foxtrot", 
+	"gamemode" : "dev", 
+	"stream-distance" : 500.0,
+	"announce" : false,
+    "language" : "ru",
+	"csharp" : "enabled",
+	"port": 22005
+}

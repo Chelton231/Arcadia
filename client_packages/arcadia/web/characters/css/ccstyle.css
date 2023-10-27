@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-image: url(../img/CC1.png);
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    top: 465px;
+    /* left: 690px; */
+    width: 100%;
+    height: 615px;
+    color: #fff;
+}
+
+.register-box {
+    top: 380px; 
+    height: 700px;
+}
+
+.box .form .inputBox .fa-user{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(202,74,74,1);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 0;
+}
+
+.box .form .inputBox .fa-user-group{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(202,74,74,1);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 85px;
+}
+
+.box .form .inputBox .fa-mars{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 180px;
+}
+
+.box .form .inputBox .fa-venus{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 180px;
+    left: 915px;
+}
+
+.box .form .inputBox .fa-repeat {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(202,74,74,1);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 170px;
+    transform: rotateZ(45deg);
+}
+
+.box .form .inputBox .fa-at {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(202,74,74,1);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 255px;
+}
+
+.box .form .inputBox .fa-ticket {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(202,74,74,1);
+    font-size: 35px;
+    width: 85px;
+    height: 75px;
+    top: 340px;
+    transform: rotateZ(-25deg);
+}
+
+.box .form .inputBox input {
+    width: 450px;
+    height: 75px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 75px;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    border: 2px solid rgb(202, 74, 74);
+}
+
+.box .form .inputBox input[type~="text"] {
+    font-size: 22px;
+    padding-left: 75px;
+    color: rgb(97, 97, 97);
+    font-weight: 500;
+}
+
+.box .form .inputBox input[type~="password"] {
+    font-size: 22px;
+    padding-left: 75px;
+    color: rgb(97, 97, 97);
+    font-weight: 500;
+}
+
+.box .form .inputBox .maleBtn {
+    cursor: pointer;
+    width: 220px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background: rgb(202, 74, 74);
+}
+
+.box .form .inputBox .femalebtn {
+    cursor: pointer;
+    width: 220px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background: rgb(202, 74, 74);
+}
+
+.box .form .inputBox .login-btn:hover {
+    box-shadow: inset 0 15px 15px  -15px #333, 
+                inset 0 -15px 15px  -15px #333;
+    background: linear-gradient(145deg, rgb(209, 65, 65) 0%, rgb(209, 65, 65) 40%, rgb(172, 105, 105) 100%);
+}
+
+.box .info {
+    font-family: 'Roboto';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 25px;
+    bottom: 75px;
+    left: 0;
+    /* background: rgb(10, 240, 163); */
+}
+
+.box .info p {
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: rgb(202, 74, 74);
+}
+
+.custom {
+    color: #fff;
+}
+
+.form p {
+    padding-left: 30px;
+}
+
+.form a {
+    text-decoration: none;
+    outline: none;
+    color: rgb(202, 74, 74);
+}
+
+.form a:hover {
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    min-height: 20px;
+    color: #fff;
+    justify-content: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 15px 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer ul li a:hover {
+    color: rgb(202, 74, 74);
+}

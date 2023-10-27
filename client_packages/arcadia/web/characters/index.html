@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9fe0e51a3b.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div class="right-side-bar" id="right-side-bar">
+            <input type="button" class="btn btn-secondary btn-new-character" value="Создать нового персонажа" onclick="newcharacter()">
+        </div>
+
+        
+        <script>
+            function newcharacter() {
+                mp.trigger("CreateCharacter.Open");
+            }
+
+            function confirm() {
+                let firstname = document.getElementById("first-box-fName").innerHTML;
+                let secondname = document.getElementById("first-box-sName").innerHTML;
+
+                mp.trigger('ChooseCharacter.Submit', firstname, secondname);
+            }
+
+            function secondconfirm() {
+                let firstname = document.getElementById("second-box-fName").innerHTML;
+                let secondname = document.getElementById("second-box-sName").innerHTML;
+
+                mp.trigger('ChooseCharacter.Submit', firstname, secondname);
+            }
+
+            function thirdconfirm() {
+                let firstname = document.getElementById("third-box-fName").innerHTML;
+                let secondname = document.getElementById("third-box-sName").innerHTML;
+
+                mp.trigger('ChooseCharacter.Submit', firstname, secondname);
+            }
+
+            var first_card = 
+                `<div class="card">
+                    <p id="first-box-fName"></p>
+                    <p id="first-box-sName"></p>
+                    <input type="button" value="GO" onclick="confirm()">
+                    
+                </div>`;
+            
+            var second_card = 
+                `<div class="card">
+                    <p id="second-box-fName"></p>
+                    <p id="second-box-sName"></p>
+                    <input type="button" value="GO" onclick="secondconfirm()">
+                    
+                </div>`;
+            
+            var third_card = 
+                `<div class="card">
+                    <p id="third-box-fName"></p>
+                    <p id="third-box-sName"></p>
+                    <input type="button" value="GO" onclick="thirdconfirm()">
+                    
+                </div>`;
+            
+            function AddFirstCard(fName, sName) {
+                
+                document.getElementById("right-side-bar").innerHTML += first_card;
+
+                document.getElementById("first-box-fName").innerHTML = fName;
+                document.getElementById("first-box-sName").innerHTML = sName;
+            }
+
+            function AddSecondCard(fName, sName) {
+                
+                document.getElementById("right-side-bar").innerHTML += second_card;
+
+                document.getElementById("second-box-fName").innerHTML = fName;
+                document.getElementById("second-box-sName").innerHTML = sName;
+            }
+
+            function AddThirdCard(fName, sName) {
+                
+                document.getElementById("right-side-bar").innerHTML += third_card;
+
+                document.getElementById("third-box-fName").innerHTML = fName;
+                document.getElementById("third-box-sName").innerHTML = sName;
+            }
+
+
+        </script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
+</html>

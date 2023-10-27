@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/0d98efb7f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2 class="gamemode">Role Play</h2>
+    <h2 class="name">Royalty</h2>
+    <div class="img">
+        <img src="./img/rightside1.png">
+    </div>
+    <div class="box">
+        <div class="form">
+            <h2>Register</h2>
+            <div class="inputBox">
+                <input id="accountname" type="text" required="">
+                <span><i class="fa-solid fa-user"></i> Login</span>
+                <div class="space"></div>
+            </div>
+            <div class="inputBox">
+                <input id="password" type="password" required="">
+                <span><i class="fa-solid fa-key"></i> Password</span>
+                <div class="space"></div>
+            </div>
+            <div class="inputBox">
+                <input id="repeatpassword" type="password" required="">
+                <span><i class="fa-solid fa-key"></i> Repeat password</span>
+                <div class="space"></div>
+            </div>
+            <div class="inputBox">
+                <input id="email" type="text" required="">
+                <span><i class="fa-solid fa-at"></i> E-mail</span>
+                <div class="space"></div>
+            </div>
+            <div class="inputBox">
+                <input id="ticket" type="text" required="">
+                <span><i class="fa-solid fa-ticket"></i> Referal link</span>
+                <div class="space"></div>
+                <!-- <div class="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div> -->
+            </div>
+            <div class="links">
+                <div class="options">Back to <a href="../login/login.html" class="signup">Sign in</a></div>
+            </div>
+            <input type="submit" value="Register" onclick="register()">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="privacyPolicy"><a href="#">Privacy policy</a></div>
+        <div class="rules"><a href="#">Terms of use</a></div>
+    </div>
+
+    <script>
+        function register() {
+            let accountname = document.getElementById("accountname").value;
+            let password = document.getElementById("password").value;
+            let repeatpassword = document.getElementById("repeatpassword").value;
+            let email = document.getElementById("email").value;
+            mp.trigger('Register.Submit', accountname, password, email);
+        }
+
+        //Add handlers if account already created   
+
+    </script>
+
+</body>
+</html>

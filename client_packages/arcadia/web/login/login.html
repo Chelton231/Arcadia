@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RoyaltyRP Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2 class="gamemode">Role Play</h2>
+    <h2 class="name">Royalty</h2>
+    <div class="img">
+        <img src="./img/rightside1.png">
+    </div>
+    <div class="box">
+        <div class="form">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input id="accountname" type="text" required="required" maxlength="20" autofocus>
+                <span>Login</span>
+                <div class="space"></div>
+            </div>
+            <div class="inputBox">
+                <input id="password" type="password" required="required" maxlength="20">
+                <span>Password</span>
+                <div class="space"></div>
+            </div>
+            <div class="links">
+                <div class="options"><a href="">Forgot password?</a></div>
+                <div class="options">Don't have an account? <a href="../register/register.html" class="signup">Signup</a></div>
+            </div>
+            <input type="submit" value="Login" onclick="login()">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="privacyPolicy"><a href="#">Privacy policy</a></div>
+        <div class="rules"><a href="#">Terms of use</a></div>
+    </div>
+
+    <script>
+        // document.onmousedown = function(e) {
+        //     e = e || window.event;
+
+        //     var ErrorMsg = document.getElementById("info").value
+        //     if(e.which == 1) {
+        //         if (ErrorMsg !== "") {
+        //             document.getElementById("info").innerHTML = "";
+        //         }
+        //     }
+        //     return false;
+        // }
+
+        document.onkeyup = function (e) {
+            e = e || window.event;
+
+            if (e.keyCode === 13) {
+                if (document.getElementById("accountname").value === null || document.getElementById("password").value === null) {
+                    document.getElementById("info").value = "Небходимо заполнить оба поля.";
+                    setTimeout(() => document.getElementById("info").innerHTML = "", 15000);
+                } else login();
+            }
+            return false;
+        }
+        
+        function WrongPassword() {
+            document.getElementById("info").innerHTML = "Вероятно Вы ввели неправильный пароль, попробуйте еще раз!";
+            setTimeout(() => document.getElementById("info").innerHTML = "", 15000);
+        }
+
+        function AccountNameNotExists() {
+            document.getElementById("info").innerHTML = "Такого аккаунта не существует.";
+            setTimeout(() => document.getElementById("info").innerHTML = "", 15000);
+        }
+
+        function login() {
+            let accountname = document.getElementById("accountname").value;
+            let password = document.getElementById("password").value;
+            mp.trigger('Login.Submit', accountname, password);
+        }
+    </script>
+
+</body>
+</html>

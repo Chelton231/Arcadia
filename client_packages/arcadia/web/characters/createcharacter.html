@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/0d98efb7f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../characters/css/ccstyle.css">
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <div class="inputBox">
+                <input id="accountname" type="text" value="" placeholder="Придуймайте имя" maxlength="20" autofocus>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inputBox">
+                <input id="password" type="password" value="" placeholder="Придумайте фамилию" maxlength="20">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+            <div class="inputBox">
+                <input type="button" class="maleBtn" value="Мужчина" onclick="login()">
+                <i class="fa-solid fa-mars"></i>
+                <input type="button" class="femalebtn" value="Женщина" onclick="login()">
+                <i class="fa-solid fa-venus"></i>
+            </div>
+            <div class="inputBox">
+                <input type="button" class="login-btn" value="Войти" onclick="login()">
+            </div>
+            <p>Нету аккаунта? <a href="register.html" class="link-btn">Создайте новый!</a></p>
+            <p><a href="register.html">Забыли пароль?</a></p>
+        </div>
+        <div class="info">
+            <p id="info"></p>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#">Пользоватльское соглашение</a></li>
+                <li><a href="#">Политика защиты персональной информации</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // document.onmousedown = function(e) {
+        //     e = e || window.event;
+
+        //     var ErrorMsg = document.getElementById("info").value
+        //     if(e.which == 1) {
+        //         if (ErrorMsg !== "") {
+        //             document.getElementById("info").innerHTML = "";
+        //         }
+        //     }
+        //     return false;
+        // }
+
+        document.onkeyup = function (e) {
+            e = e || window.event;
+
+            if (e.keyCode === 13) {
+                if (document.getElementById("accountname").value === null || document.getElementById("password").value === null) {
+                    document.getElementById("info").value = "Небходимо заполнить оба поля.";
+                    setTimeout(() => document.getElementById("info").innerHTML = "", 15000);
+                } else login();
+            }
+            return false;
+        }
+        
+        function WrongPassword() {
+            document.getElementById("info").innerHTML = "Вероятно Вы ввели неправильный пароль, попробуйте еще раз!";
+            setTimeout(() => document.getElementById("info").innerHTML = "", 15000);
+        }
+
+        function AccountNameNotExists() {
+            document.getElementById("info").innerHTML = "Такого аккаунта не существует.";
+            setTimeout(() => document.getElementById("info").innerHTML = "", 15000);
+        }
+
+        function login() {
+            let accountname = document.getElementById("accountname").value;
+            let password = document.getElementById("password").value;
+            mp.trigger('Login.Submit', accountname, password);
+        }
+    </script>
+</body>
+</html>

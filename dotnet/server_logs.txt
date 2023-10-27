@@ -1,0 +1,576 @@
+Initializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 28.08.2020 15:58:37
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating CommandsDegub..
+Arcadia: instantiating Events..
+Arcadia: instantiating Arcadia.IPlayer..
+Arcadia: instantiating Arcadia.Globals.Globals..
+Arcadia: instantiating Arcadia.Database.PlayerData..
+Arcadia: instantiating Arcadia.Chat.Core..
+Arcadia: instantiating Arcadia.Admin.AdminCommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 16 command(s)
+Arcadia: loading commands.. found 5 command(s)
+Arcadia: loaded 21 commands(s)
+-> Resource Arcadia started!
+Started! Waiting for connections..
+UNHANDLED EXCEPTION IN COMMAND login FOR RESOURCE Arcadia
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+   at bool Arcadia.Database.PlayerData.DoesPlayerNameExists(string name) in C:/RAGEMP/server-files/dotnet/resources/Arcadia/Database/PlayeInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 12.03.2021 23:43:34
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 29 command(s)
+Arcadia: loaded 33 commands(s)
+-> Resource Arcadia started!
+Started! Waiting for connections..
+UNHANDLED EXCEPTION IN COMMAND login FOR RESOURCE Arcadia
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+   at bool Arcadia.database.Database.DoesAccountNameExists(string accountname) in C:/RAGEMP/server-files/dotnet/resources/Arcadia/database/Database.cs:line 165
+   at void Arcadia.globals.Commands.CommandLogin(Player player, string accountname, string password) in C:/RAGEMP/server-files/dotnet/resoInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 27.03.2021 18:44:44
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 3 server event(s)
+Arcadia: loaded 3 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 32 command(s)
+Arcadia: loaded 36 commands(s)
+Arcadia: loading remote events.. found 2 remote event(s)
+Arcadia: loaded 2 remote event(s)
+-> Resource Arcadia started!
+Started! Waiting for connections..
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+   at bool Arcadia.database.Database.DoesAccountNameExists(string accountname) in C:/RAGEMP/server-files/dotnet/resources/Arcadia/database/Database.cs:line 200
+   at void Arcadia.globals.Connection.OnLogin(Player player, string accountname, string password) in C:/RAGEMP/server-files/dotnet/resources/Arcadia/globals/Connection.cs:line 22
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at void GTANetworkInternals.RemoteEventParser.Parse(Player sender, ulong eventNameHash, params object[] args)
+   at void GTANetworkInternals.RemoteEventHandler.Parse(Player sender, ulong eventNameHash, params object[] arguments)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+   at bool Arcadia.database.Database.DoesAccountNameExists(string accountname) in C:/RAGEMP/server-files/dotnet/resources/Arcadia/database/Database.cs:line 200
+   at void Arcadia.globals.Connection.OnLogin(Player player, string accountname, string password) in C:/RAGEMP/server-files/dInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 16.01.2022 12:19:51
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 39 command(s)
+Arcadia: loaded 43 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loaded 4 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnection.Open()
+   at List<TeleportModel> Arcadia.database.DatabInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.05.2022 8:43:15
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 39 command(s)
+Arcadia: loaded 43 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loading remote events.. found 1 remote event(s)
+Arcadia: loaded 5 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnectionInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 29.09.2022 18:22:03
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 39 command(s)
+Arcadia: loaded 43 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loading remote events.. found 1 remote event(s)
+Arcadia: loaded 5 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnectioInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 16.10.2022 19:49:20
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 39 command(s)
+Arcadia: loaded 43 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loading remote events.. found 1 remote event(s)
+Arcadia: loaded 5 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnectioInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.10.2023 7:45:06
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 39 command(s)
+Arcadia: loaded 43 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loading remote events.. found 1 remote event(s)
+Arcadia: loaded 5 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnectionInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 17.10.2023 21:07:49
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 39 command(s)
+Arcadia: loaded 43 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loading remote events.. found 1 remote event(s)
+Arcadia: loaded 5 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+ ---> System.AggregateException: One or more errors occurred. (Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306)
+ ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException (10061): Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение. 127.0.0.1:3306
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at bool System.Net.Sockets.Socket.DoMultipleAddressConnectCallback(object result, MultipleAddressConnectAsyncResult context)
+   at void System.Net.Sockets.Socket.MultipleAddressConnectCallback(IAsyncResult result)
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(Exception source)
+   at void System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at void System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at Task System.Net.Sockets.TcpClient.ConnectAsync(string host, int port)+(IAsyncResult asyncResult) => { } [1]
+   at void System.Threading.Tasks.TaskFactory<TResult>.FromAsyncCoreLogic(IAsyncResult iar, Func<IAsyncResult, TResult> endFunction, Action<IAsyncResult> endAction, Task<TResult> promise, bool requiresSynchronization)
+   --- End of inner exception stack trace ---
+   at void System.Threading.Tasks.Task.ThrowIfExceptional(bool includeTaskCanceledExceptions)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+   at bool System.Threading.Tasks.Task.Wait(int millisecondsTimeout)
+   at Stream MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   at Stream MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.NativeDriver.Open()
+   at void MySql.Data.MySqlClient.Driver.Open()
+   at Driver MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at Driver MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at Driver MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at Driver MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at void MySql.Data.MySqlClient.MySqlConnectioInitializing Bootstrapper.dll (1.1.0.0)..
+-> SERVER STARTED AT 20.10.2023 7:18:26
+Loaded 667 entries from vehicleData.json
+Loading resources..
+-> Starting Arcadia resource..
+Arcadia: setting as Gamemode resource
+Arcadia: loading scripts.. found 1 script(s)
+Arcadia: instantiating Arcadia.model.AccountModel..
+Arcadia: instantiating Arcadia.model.CharacterModel..
+Arcadia: instantiating Arcadia.globals.Commands..
+Arcadia: instantiating Arcadia.globals.Connection..
+Arcadia: instantiating Arcadia.globals.Core..
+Arcadia: instantiating Arcadia.globals.Events..
+Arcadia: instantiating Arcadia.database.Database..
+Arcadia: instantiating Arcadia.admin.ACommands..
+Arcadia: loading server events.. found 4 server event(s)
+Arcadia: loading server events.. found 1 server event(s)
+Arcadia: loaded 5 server events(s)
+Arcadia: loading commands.. found 4 command(s)
+Arcadia: loading commands.. found 40 command(s)
+Arcadia: loaded 44 commands(s)
+Arcadia: loading remote events.. found 4 remote event(s)
+Arcadia: loading remote events.. found 1 remote event(s)
+Arcadia: loaded 5 remote event(s)
+-> Error starting 'Arcadia'
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.IndexOutOfRangeException: Could not find specified column in results: datatime
+   at int MySql.Data.MySqlClient.ResultSet.GetOrdinal(string name)
+   at int MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(string name)
+   at DateTime MySql.Data.MySqlClient.MySqlDataReader.GetDateTime(string column)
+   at List<TeleportModel> Arcadia.database.Database.LoadAllTeleports() in D:/RAGEMP/server-files/dotnet/resources/Arcadia/database/Database.cs:line 42
+   at void Arcadia.database.Database.OnResourceStart() in D:/RAGEMP/server-files/dotnet/resources/Arcadia/database/Database.cs:line 18
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at GTANetworkInternals.ScriptingEngine.InvokeVoidMethod(String method, Object[] args)
+   at GTANetworkInternals.EventParser.Parse(Event _event, Object[] arguments)
+   at GTANetworkInternals.EventCollection.<>c__DisplayClass4_0.<ParseEx>b__1(EventParser x)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at GTANetworkInternals.EventCollection.ParseEx(Event _event, ScriptingEngine engine, Object[] arguments)
+   at GTANetworkInternals.EventHandler.ParseEx(Event _event, ScriptingEngine engine, Object[] arguments)
+   at GTANetworkInternals.GameServer.<>c.<StartResource>b__67_0(ScriptingEngine r)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at GTANetworkInternals.GameServer.StartResource(String resourceName, String parent)
+
+Started! Waiting for connections..
+UNHANDLED EXCEPTION IN COMMAND savetp FOR RESOURCE Arcadia
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void Arcadia.admin.ACommands.CommandSaveNewJumpPoint(Player sender, string pointName) in D:/RAGEMP/server-files/dotnet/resources/Arcadia/admin/ACommands.cs:line 147
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+   at bool GTANetworkInternals.CommandParser.Parse(Player sender, string cmdRaw, string ourcmd, string[] args)
+UNHANDLED EXCEPTION IN COMMAND savetp FOR RESOURCE Arcadia
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an
